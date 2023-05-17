@@ -13,4 +13,4 @@ contract-call : web3js function ( methods.call() ) for testing
 deploy.js : depoly file using hardhat
 
 ## License
-This Repository follows the MIT License.
+This Repository follows the [MIT License](License.md).
