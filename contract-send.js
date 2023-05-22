@@ -81,8 +81,4 @@ var contractAddr = '0x6e3eed104391f66914C0c9bc8FaAF674a8b79b54'
 var account1 = '0x01A151CC5ED14d110cc0e6b64360913DE9f453F1'
 var myContract = new eth.Contract(jsonInterface, contractAddr)
 
-// checked : https://web3js.readthedocs.io/en/v3.0.0-rc.5/web3-eth-contract.html#methods-mymethod-call
-// contract.method.call() is "constant" method only
-// myContract.methods.mint(utils.toBN(10000)).call().then(console.log)
-
-myContract.methods.name().call().then(console.log)
+myContract.methods.mint(utils.toBN(10000)).send({ from : account1 }).then(console.log)
